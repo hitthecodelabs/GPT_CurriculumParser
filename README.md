@@ -74,4 +74,5 @@ python app.py
 
 2. You should see a message indicating that the server has started, usually with a URL like http://127.0.0.1:5000/.
 3. Open the provided URL in your web browser to view and interact with the Flask application!
-4. That's it! You've successfully set up and run the GPT_CurriculumParser project. Enjoy exploring and customizing further!
+
+That's it! You've successfully set up and run the HitTheCodeLabs Website project locally. Don't forget to check out the [**live demo!**](https://gpt-curriculum-info-extractor.uc.r.appspot.com/) Enjoy exploring and customizing further!
