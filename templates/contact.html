@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Contact Us{% endblock %}
+{% block content %}
+<div class="centered-content">
+    <h2 class="text-center">Contact Information</h2>
+    <p>
+        Interested in discussing a project? We'd love to hear from you.
+    </p>
+
+    <div class="contact-container"> <!-- Flexbox container -->
+        <!-- Contact Information -->
+        <div class="contact-section">
+            <h3>Contact</h3>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i> <!-- phone icon -->
+                <span>+1 (786) 891-9777</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-globe"></i> <!-- website icon -->
+                <span><a class="footer-link" href="https://hitthecodelabs.com" target="_blank">hitthecodelabs.com</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i> <!-- email icon -->
+                <span><a class="footer-link" href="mailto:jpaul@hitthecodelabs.com">jpaul@hitthecodelabs.com</a></span>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-section">
+            <h3>Social Media</h3>
+            <div class="contact-item">
+                <i class="fab fa-tiktok"></i> <!-- TikTok icon -->
+                <span><a class="footer-link" href="https://tiktok.com/@hitthecode" target="_blank">TikTok</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i> <!-- Instagram icon -->
+                <span><a class="footer-link" href="https://instagram.com/hitthecode" target="_blank">Instagram</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
+                <span><a class="footer-link" href="https://wa.me/17868919777" target="_blank">WhatsApp</a></span>
+            </div>
+        </div>
+    </div> <!-- End of Flexbox container -->
+</div>
+{% endblock %}

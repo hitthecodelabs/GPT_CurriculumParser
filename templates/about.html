@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+<div class="centered-content">
+<!--     <h2 class="text-center">About Us</h2> -->
+
+    <div class="contact-container"> <!-- Flexbox container -->
+
+        <!-- About Us Section -->
+        <div class="contact-section"> 
+            <h3>About Us</h3>
+            <p>
+                Specializing in data science, we offer cutting-edge solutions with projects ranging from artificial intelligence and computer vision in healthcare to blockchain in supply chain and decentralized finance.
+            </p>
+        </div>
+
+        <!-- What We Do Section -->
+        <div class="social-section">
+            <h3>What we do</h3>
+            
+            <div class="service-offering">
+                <i class="fas fa-robot"></i> <!-- NLP Algorithms Icon -->
+                <p>
+                    Utilize state-of-the-art NLP algorithms to perform text analysis, sentiment classification, and chatbot development.
+                </p>
+            </div>
+
+            <div class="service-offering">
+                <i class="fas fa-chart-line"></i> <!-- Machine Learning Icon -->
+                <p>
+                    Leverage advanced machine learning techniques to provide actionable insights through time-series forecasting and anomaly detection.
+                </p>
+            </div>
+
+            <div class="service-offering">
+                <i class="fas fa-cloud"></i> <!-- Cloud Services Icon -->
+                <p>
+                    Expertise in integrating services such as Google Cloud's Machine Learning and AI offerings.
+                </p>
+            </div>
+        </div>
+    </div> <!-- End of Flexbox container -->
+</div>
+{% endblock %}

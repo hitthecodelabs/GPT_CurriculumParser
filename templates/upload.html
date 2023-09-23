@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Upload PDF{% endblock %}
+{% block content %}
+<!-- Your upload form goes here -->
+<div class="centered-form">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</div>
+
+<div class="card-grid">
+
+    <!-- How It Works Card -->
+    <div class="card">
+        <div class="card-content"> <!-- New div to help center the content -->
+            <h2>How It Works</h2>
+            <p>This tool effortlessly converts a Curriculum Vitae (CV) in PDF format into structured JSON data:</p>
+            <ol>
+                <li>Upload your CV in PDF format.</li>
+                <li>Our tool processes the CV, extracting relevant details.</li>
+                <li>View the processed JSON content for accuracy.</li>
+                <li>Download the structured JSON data seamlessly.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Technologies Used Card -->
+    <div class="card">
+        <div class="card-content">
+            <h2>Technologies Used</h2>
+            <p>We harness cutting-edge technologies:</p>
+            <ul>
+                <li><strong>Flask:</strong> Serving user requests.</li>
+                <li><strong>OpenAI's GPT-4:</strong> Precise CV content structuring.</li>
+                <li><strong>PyPDF2:</strong> Text extraction from PDFs.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Guidelines Card -->
+    <div class="card">
+        <div class="card-content">
+            <h2>CV Formatting Guidelines</h2>
+            <p>Your CV should:</p>
+            <ul>
+                <li>Be clear, legible, and structured.</li>
+                <li>Feature sections like 'Education', 'Experience'.</li>
+                <li>Minimize complex graphical elements.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Why Use This Tool Card -->
+    <div class="card">
+        <div class="card-content">
+            <h2>Why Major Companies Choose Us</h2>
+            <p>Converting a CV to JSON provides corporate advantages:</p>
+            <ul>
+                <li><strong>Automation:</strong> Speed up recruitment processes.</li>
+                <li><strong>Integration:</strong> Seamless integration with HR platforms.</li>
+                <li><strong>Analysis:</strong> Recruitment driven by data strategies.</li>
+            </ul>
+        </div>
+    </div>
+
+</div> <!-- End of card-grid -->
+{% endblock %}

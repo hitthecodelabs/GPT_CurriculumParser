@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Curriculum Vitae to JSON Converter{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Curriculum Vitae to JSON Converter</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact Info</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+
+    {% block content %}
+    <!-- This will be overridden by child templates -->
+    {% endblock %}
+    
+</main>
+
+<!-- Footer -->
+<footer>
+    <p><a class="footer-link" href="https://hitthecodelabs.com" target="_blank">hitthecodelabs.com</a></p>
+    <p>© 2023 Hit the Code Labs. Made with ❤️ by Jean Paul</p>
+</footer>
+
+</body>
+</html>

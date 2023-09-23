@@ -1,0 +1,275 @@
+/* Font Declarations */
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"),
+    url("./assets/fonts/OpenSans-ExtraBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
+  font-display: swap;
+}
+
+/* Resetting some default margins and paddings */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    font: 16px / 24px Montserrat, sans-serif;
+    background-color: #f6f8fa; /* Neutral Background */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header Styles */
+header {
+    /* background: #2C3E50; /* Darker Blue */
+    /* background: #3b1e6a; /* Darker Blue */
+    background: #3b1e6a; /* Darker Blue */
+    color: #ECF0F1; /* Off-White Text */
+    /* color: #ECF0F1; /* Off-White Text */
+    padding: 20px 40px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+h1 {
+    font-size: 26px; /* Larger Title */
+    letter-spacing: 1px; /* Spaced out letters */
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 40px; /* More Spacing */
+    flex-direction: column; /* Added this line */
+}
+
+/* Sticky Footer Styles */
+footer {
+    /* background: #2C3E50; /* Consistent with Header */
+    background: #3b1e6a; /* Darker Blue */
+    color: #ECF0F1;
+    padding: 30px 0; /* More Vertical Spacing */
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-link {
+    background-color: transparent;
+    color: #3498db; /* You can choose any color */
+    box-shadow: none;
+    padding: 0;
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Add underline on hover for emphasis */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    padding: 5px 10px; /* Padding for better clickability */
+    text-decoration: none;
+    color: #ECF0F1;
+    border-radius: 5px; /* Soft rounded edges */
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #ECF0F1;
+    /* color: #2C3E50; */
+    color: #641367;
+}
+
+/* Buttons and Inputs */
+input[type="submit"], a {
+    /* background-color: #3498DB; /* Brighter Blue */
+    background-color: #3498dbe5; /* Brighter Blue */
+    color: white;
+    padding: 12px 20px; /* Larger Buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Shadow for depth */
+}
+
+input[type="submit"]:hover, a:hover {
+    background-color: #2980B9; /* Darker on Hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  html, body {
+    font-size: rem;
+    line-height: normal;
+  }
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+/*     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased from 250px to 300px  */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+/*     min-width: 300px; /* Ensuring a minimum width */ 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    text-align: center; /* Centering card content */
+    padding: 20px;
+}
+
+.card-content p, .card-content ol, .card-content ul {
+    text-align: left; /* Ensuring lists and headers are left aligned for clarity */
+}
+
+.card-content h2 {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+    text-align: center; /* Add this line to center-align the text */
+}
+
+.upload-section {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.centered-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.centered-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* take full width of the parent */
+    text-align: center; /* center-align the text */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.service-offering {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Spacing between offerings */
+}
+
+.service-offering i {
+    font-size: 24px; /* Adjust size of icon */
+    margin-right: 10px; /* Space between icon and text */
+    color: #3498DB; /* Some color to make icon stand out */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Spacing between contact items */
+    font-size: 18px; /* Slightly larger font for clarity */
+}
+
+.contact-item i {
+    font-size: 24px; /* Adjust size of icon */
+    margin-right: 10px; /* Space between icon and text */
+    color: #3498DB; /* Some color to make the icon stand out */
+}
+
+.contact-item a {
+    color: #3498DB; /* Give the email and website a color */
+    text-decoration: none; /* Remove underline for cleaner look */
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start; /* This ensures the tops of both sections align if they have different heights */
+    gap: 8rem; /* Increased space between sections */
+}
+
+.contact-section, .social-section {
+    flex: 1; 
+    max-width: 40%; /* Decreased the width a bit to create more space between the sections */
+}

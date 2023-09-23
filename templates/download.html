@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Download JSON{% endblock %}
+{% block content %}
+<!-- Your download link goes here -->
+<a href="{{ url_for('download', filename='json_cv_extraction.json') }}">Download JSON</a>
+<br><br>
+<!-- Display the JSON content -->
+<h3>Processed JSON Content:</h3>
+<pre>
+{{ json_content }}
+</pre>
+{% endblock %}
