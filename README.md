@@ -1,6 +1,6 @@
 # GPT_CurriculumParser 
 
-🚀 [**Live Demo of the Website**](https://gpt-curriculum-info-extractor.uc.r.appspot.com/)
+🚀 [**Live Demo**](https://gpt-curriculum-info-extractor.uc.r.appspot.com/)
 
 Welcome to the GPT_CurriculumParser project! This Flask-based website provides information about our services in data science, machine learning, and AI. Below are step-by-step instructions to set up and run this project.
 
