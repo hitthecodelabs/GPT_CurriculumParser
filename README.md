@@ -43,7 +43,10 @@ prompt = (f"Collect the following resume to extract structured information... ")
 
 ## Installing Dependencies
 1. Navigate to the project's root directory in the terminal.
-2. Create a virtual environment (recommended for isolated Python environments):
+```bash
+cd GPT_CurriculumParser
+```
+3. Create a virtual environment (recommended for isolated Python environments):
 
 ```bash
 python -m venv venv
